@@ -25,7 +25,7 @@ pfServer.use(router)
 //
 pfServer.use('/uploads',express.static('./uploads'))
 
-const PORT = 3010
+const PORT = 3010 || process.env.PORT
 
 //to listen
 pfServer.listen(PORT,()=>{
